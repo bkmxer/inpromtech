@@ -1,0 +1,170 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  section#contacts
+    .contacts-over-map_wrapper
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  section
+    padding: 1em 0
+
+  form#contact_form
+    margin: 0
+  .contatcs_on_main
+    .contacts-container
+      .contacts-container_block
+        text-align: center
+        width: 50%
+  section#contacts
+    .contacts-over-map_wrapper
+        width: 100%
+        margin-left: 0
+  #header .left-side_wrapper .top_box
+    background-color: rgba( 233, 177, 30, 0.7)
+  footer#footer
+    a.last_link
+      margin: 10% 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  #header .col-md-6:first-child
+    padding-left: 0;
+  .col_wrapper
+    &--bordered
+      .partners-block
+        a
+          max-width: 50%
+  section.trustUs
+    .col_wrapper
+      &--accent
+        color: $accent
+        text-align: left
+        padding: 0 4em
+
+  .lc-checks li:nth-child(odd) span.lc-checks__feature,
+  .lc-checks li:nth-child(even) span.lc-checks__feature
+    right: 0
+    left: 0
+    margin-right: 10%
+    margin-left: 0
+  ul.lc-checks:after
+    right: 5%
+    left: auto
+
+    margin-left: 25px
+  span.lc-checks__check
+    right: 3%
+    left: auto
+  .lc-checks li:nth-child(odd):hover .lc-checks__feature,
+  .lc-checks li:nth-child(even):hover .lc-checks__feature
+    margin-right: 0
+    margin-left: 25px
+    padding-right: 25px
+  ul.lc-checks li
+    height: 5.5em
+    span.lc-checks__feature
+      font-size: 1em
+      line-height: 1.2em
+  nav#navigation
+    ul
+      li
+        &:hover
+          ul.object
+            display: none !important
+
+
+
+//intermediate custom step
+@media only screen and (max-width: 640px)
+  ul.lc-checks li
+    height: 20vh
+  span.lc-checks__feature
+    font-size: 1em
+    line-height: 1.2em
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  #header
+    .left-side_wrapper
+      .top_box
+        &.right-bottom_box
+          a
+            font-weight: normal
+    .left-side_wrapper .top_box nav ul
+      margin: 1em
+  .contatcs_on_main
+    .contacts-container
+      .contacts-container_block
+        text-align: center
+        width: 50%
+  #header
+    .col-md-6:first-child
+      .top_box
+        &.left-top_box
+          img
+            display: block
+            position: relative
+            margin: auto
+            width: 80%
+            top: 20%
+  ul.lc-checks li:nth-child(7)
+    height: 30vh
+  ul.lc-checks li:first-child,
+  ul.lc-checks li:nth-child(2)
+    height: 15vh
+  body section.production .object_wrapper .object_description,
+  body section.production .object_wrapper img
+    display: block
+
+    width: 80%
+    margin: auto
+    text-align: center
+  img
+    width: 50%
+    vertical-align: top
+  nav#navigation
+    ul
+      li
+        ul.object
+          z-index: -5
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  span.lc-checks__feature
+    font-size: 1em !important
+    line-height: 1em !important
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

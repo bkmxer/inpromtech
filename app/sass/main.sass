@@ -1,0 +1,273 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+
+@import "media"
+section#contacts
+  position: relative
+form[action="mail.php"]
+  font-size: 1.3em
+  margin: 50px 0
+  background-color: $accent
+  padding: 10px
+  color: #fff
+  box-shadow: rgba(0, 0, 0, 0.298039) 0 1px 4px -1px
+  animation-delay: 2s
+  animation-duration: 1s
+  p
+    width: 90%
+    display: block
+    margin: 0 auto
+  .legend
+    text-transform: uppercase
+    font-size: 1em
+    color: #fff
+    text-align: right
+    margin-bottom: 20px
+  input,
+  button,
+  textarea
+    border: 1px solid #fff
+    display: block
+    width: 90%
+    margin: 10px auto
+    padding: 10px 15px
+  textarea
+    resize: none
+  input,
+  textarea
+    color: #666
+    &::placeholder
+      color: #999
+  button
+    width: 90%
+    background-color:  $default_font_color
+    border: none
+    color:  $accent
+    padding: 10px
+    display: block
+    margin: 10px auto
+    text-align: center
+    text-transform: uppercase
+    font-weight: bold
+    -webkit-transition: all 0.5s ease
+    -moz-transition: all 0.5s ease
+    -ms-transition: all 0.5s ease
+    -o-transition: all 0.5s ease
+    transition: all 0.5s ease
+    &:hover,
+    &:active,
+    &:focus
+      color: $accent_font_color
+      text-decoration: none
+    &:hover
+      color: $accent !important
+      background-color: $default-font-color
+      border: none
+      padding-left: 10%
+section
+  background-color: #fff
+
+section#contacts
+  position: relative
+
+
+.contacts-over-map_wrapper
+    background-color: rgba(255,255,255, .8)
+    width: 70%
+    margin-left: 30%
+    text-align: left
+    padding: 1em
+    h1, h2,h3
+      margin: 0
+      margin-top: 10px
+      a
+        color: $accent
+        transition: all 0.5s ease
+        &:focus,
+        &:active
+          text-decoration: none
+        &:hover
+          margin-left: 0
+          text-decoration: none
+          padding-left: 10%
+    .contacts-container
+      width: 100%
+      display: flex
+      flex-wrap: wrap
+      .contacts-container_block
+        text-align: center
+        width: 50%
+
+        .pic
+          display: block
+          margin: 0 auto
+          color: #000
+          width: 4em
+          height: 4em
+          background-color: $accent
+          -webkit-mask-image: url('../img/svg/map-location.svg')
+          mask-image: url('../img/svg/map-location.svg')
+          -webkit-mask-size: cover
+          mask-size: cover
+          &--phone
+            -webkit-mask-image: url('../img/svg/smartphone.svg')
+            mask-image: url('../img/svg/smartphone.svg')
+          &--mail
+            -webkit-mask-image: url('../img/svg/email.svg')
+            mask-image: url('../img/svg/email.svg')
+section.contatcs_on_main
+  padding: 0;
+
+
+.external_gmap
+   position: absolute
+   width: 100%
+   min-height: 500px
+   &.mobilemap
+     width: 95%
+   &.external_gmap-desktop
+     top: 200px
+     max-height: 20vh
+
+//aboutUs page uniques styles
+.lc-checks
+  font-size: 1em
+  list-style: none
+  margin: 0
+  padding: 20px 0 85px 0
+  position: relative
+
+
+.lc-checks:after
+  content: ''
+  position: absolute
+  top: 0
+  left: 50%
+  z-index: 1
+  height: 100%
+  width: 2px
+  background: $accent
+
+
+.lc-checks li
+  z-index: 5
+  height: 4em
+  line-height: 1.5em
+  position: relative
+  cursor: default
+  font-weight: lighter
+
+
+.lc-checks__feature
+  position: absolute
+  background-color: $accent
+  padding: 0 1em
+  border-radius: 2px
+  transition: all .2s ease
+  color: #fff
+  padding: 0.6em
+
+.lc-checks li:nth-child(odd) .lc-checks__feature
+  left: 50%
+  margin-left: 30px
+
+
+.lc-checks li:nth-child(even) .lc-checks__feature
+  right: 50%
+  margin-right: 30px
+
+
+.lc-checks__check
+  position: absolute
+  z-index: 2
+  left: 50%
+  margin-left: -15px
+  text-align: center
+  width: 30px
+  background: #fff
+  color: $default_font_color
+  border: 1px dashed $default_font_color
+  font-size: 1.2em
+  border-radius: 2px
+  transition: all .2s ease
+
+
+.lc-checks li:hover .lc-checks__check
+  transform: scale(1.2)
+
+
+.lc-checks li:nth-child(odd):hover .lc-checks__feature
+  margin-left: 25px
+
+
+.lc-checks li:nth-child(even):hover .lc-checks__feature
+  margin-right: 25px
+
+
+section.production
+  .object_wrapper
+    text-align: center
+    margin-top: 1em
+    padding: 1em
+    transition: all 0.5s ease
+    &:hover
+      background-color: $accent
+      color: $accent_font_color
+      a
+        color: $accent_font_color
+
+    img,
+    .object_description
+      display: inline-block
+      text-align: left
+      width: 100%
+      top: 0
+    .photo_description
+      text-align:  left
+
+    img
+      width: 35%
+      vertical-align: top
+    h2
+      margin: 0.3em;
+      display: block
+      text-align: center
+    a
+      margin: 1em 0
+      display: block
+      color: $accent
+      transition: all 0.5s ease
+      text-transform: uppercase
+      &:hover
+        margin-left: 0
+        padding-left: 10%
+  a.object_wrapper
+    display: block
+    color: $gray_font_color
+    &:hover,
+    &:focus,
+    &:active
+      text-decoration: none
+    img
+      width: 100%
+  .photo_description
+    margin-top: 1em
+
+.gallery-bottom__links
+  text-align: center
+  a
+    text-transform: uppercase
+    display: block
+    margin: 2em 0
+    color: $accent
+    transition: all 0.5s ease
+    &:focus,
+    &:active
+      text-decoration: none
+    &:hover
+      margin-left: 0
+      text-decoration: none
+      padding-left: 10%
