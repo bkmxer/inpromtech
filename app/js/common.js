@@ -146,17 +146,31 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 
 
 $(document).ready(function() {
+        owl = $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 5000,
 
-    owl = $('.owl-carousel').owlCarousel({
-        autoPlay : true,
-        autoplayTimeout: 5000,
-        nav:true,
-        responsiveClass:true,
-        margin:22,
-        autoWidth:true,
-        loop:true,
-        center: true,
+            margin:22,
+            autoWidth:true,
+            loop:true,
+            center: true
+        });
+
+    $('.eng_trigger').click(function(){
+        $('.lang').addClass('hidden');
+        $('.english_lang').removeClass('hidden');
     });
+    $('.rus_trigger').click(function(){
+        $('.lang').addClass('hidden');
+        $('.russian_lang').removeClass('hidden');
+    });
+    $('.ukr_trigger').click(function(){
+        $('.lang').addClass('hidden');
+        $('.ukrainian_lang').removeClass('hidden');
+    });
+
+
+
 
     // Custom Navigation Events
     $("#slider-back-controll").click(function () {
@@ -208,6 +222,5 @@ $(window).scroll(function(event){
     }
     lastScrollTop = st;
 });
-
 
 

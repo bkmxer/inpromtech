@@ -156,9 +156,20 @@ html
   min-height: 100vh
   min-width: 100vw
 body
-  margin: 0
   padding: 0
   min-width: 320px
+  max-width: 100%
+  margin: 0 auto
+
+.lang_trigger
+  z-index: 100
+  position: absolute
+  right: 10%
+  background-color: rgba(233, 177, 30, 0.4)
+  .trigger
+     cursor: pointer
+     display: inline-block
+
 section
   background-color: $accent_font_color
 #header
@@ -382,7 +393,7 @@ section.trustUs
         &active
           text-decoration: none
           color: $gray_font_color
-  margin-top
+
       p
         margin: 1.3em
       .partners-block

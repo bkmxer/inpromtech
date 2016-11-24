@@ -67,6 +67,11 @@
 </head>
 
 <body>
+<div class="lang_trigger">
+	<div class="trigger eng_trigger"><img src="img/svg/united-kingdom.svg" alt="ENG" width="40px" height="28px" /></div>
+	<div class="trigger rus_trigger"><img src="img/svg/russia.svg" alt="ENG" width="40px" height="28px" /></div>
+	<div class="trigger ukr_trigger"><img src="img/svg/ukraine.svg" alt="ENG" width="40px" height="28px" /></div>
+</div>
 <div class="preloader">
 	<div class="pre-wrap">
 		<div class="drop-outer">
@@ -104,11 +109,36 @@
 	<!-- Custom HTML -->
 <header id="header" class="parallax-window">
 	<div class="owl-carousel owl-drag" id="owl-demo">
-		<div class="item"><img src="img/slider-bg-1.png" alt=""></div>
-		<div class="item"><img src="img/slider-bg-2.png" alt=""></div>
-		<div class="item"><img src="img/slider-bg-3.png" alt=""></div>
-		<div class="item"><img src="img/slider-bg-4.png" alt=""></div>
-		<div class="item"><img src="img/slider-bg-5.png" alt=""></div>
+		<div class="item ">
+			<picture>
+				<source srcset="img/slider/slider_660/Slider-bg-1.jpg" media="(max-width: 660px)">
+				<img srcset="img/slider/slider_def/slider-bg-1.jpg">
+			</picture>
+		</div>
+		<div class="item ">
+			<picture>
+				<source srcset="img/slider/slider_660/Slider-bg-2.jpg" media="(max-width: 660px)">
+				<img srcset="img/slider/slider_def/slider-bg-2.jpg">
+			</picture>
+		</div>
+		<div class="item ">
+			<picture>
+				<source srcset="img/slider/slider_660/Slider-bg-3.jpg" media="(max-width: 660px)">
+				<img srcset="img/slider/slider_def/slider-bg-3.jpg">
+			</picture>
+		</div>
+		<div class="item ">
+			<picture>
+				<source srcset="img/slider/slider_660/Slider-bg-4.jpg" media="(max-width: 660px)">
+				<img srcset="img/slider/slider_def/slider-bg-4.jpg">
+			</picture>
+		</div>
+		<div class="item ">
+			<picture>
+				<source srcset="img/slider/slider_660/Slider-bg-5.jpg" media="(max-width: 660px)">
+				<img srcset="img/slider/slider_def/slider-bg-5.jpg">
+			</picture>
+		</div>
 	</div>
 	<div class="container">
 		<div class="darkened_headerhalf hidden-xs hidden-sm" >
@@ -132,20 +162,20 @@
 					<div class="top_box right-bottom_box">
 						<nav id="navigation">
 							<ul>
-								<li><a href="index.html">Главная</a></li>
-								<li><a href="about.html">О нас</a></li>
-								<li class="objects_trigger"><a class="" href="objects.html">Объекты</a>
+								<li><a href="index.html"><span class="lang russian_lang">Главная</span><span class="lang ukrainian_lang hidden">Головна</span><span class="lang english_lang hidden">Main</span></a></li>
+								<li><a href="about.html"><span class="lang russian_lang">О нас</span><span class="lang ukrainian_lang hidden">Про нас</span><span class="lang english_lang hidden">About Us</span></a></li>
+								<li class="objects_trigger"><a class="" href="objects.html"><span class="lang russian_lang">объекты</span><span class="lang ukrainian_lang hidden">об'єкти</span><span class="lang english_lang hidden">Our objects</span></a>
 									<ul class="object">
-										<li><a href="objects/winery.html"> виноделие</a></li>
-										<li><a href=""> пивоварение</a></li>
-										<li><a href=""> виноделие</a></li>
-										<li><a href=""> виноделие</a></li>
-										<li><a href=""> виноделие</a></li>
-										<li><a href=""> виноделие</a></li>
+										<li><a href="winery.html"> <span class="lang russian_lang">виноделие</span><span class="lang ukrainian_lang hidden">виноробство</span><span class="lang english_lang hidden">wine industry</span></a></li>
+										<li><a href=""> <span class="lang russian_lang">Пивоварение</span><span class="lang ukrainian_lang hidden">Пивоваріння</span><span class="lang english_lang hidden">Brewery</span></a></li>
+										<li><a href=""> <span class="lang russian_lang">Ликеро-водочная промышленность</span><span class="lang ukrainian_lang hidden">Лікеро-горілчана промисловість</span><span class="lang english_lang hidden">Alcoholic beverage industry</span></a></li>
+										<li><a href=""> <span class="lang russian_lang">Пищевая промышленность</span><span class="lang ukrainian_lang hidden">Харчова промисловість</span><span class="lang english_lang hidden">Food industry</span></a></li>
+										<li><a href=""> <span class="lang russian_lang">Производство воды, напитков и соков</span><span class="lang ukrainian_lang hidden">Виробництво води, напоїв і соків</span><span class="lang english_lang hidden">The production of water, drinks and juices</span></a></li>
+										<li><a href=""> <span class="lang russian_lang">Фармацевтическая промышленность</span><span class="lang ukrainian_lang hidden">Фармацевтична промисловість</span><span class="lang english_lang hidden">The pharmaceutical industry</span>  </a></li>
 									</ul>
 								</li>
-								<li><a href="gallery.html">Галерея работ</a></li>
-								<li><a href="contacts.html">Контакты</a></li>
+								<li><a href="gallery.html"><span class="lang russian_lang">галерея работ</span><span class="lang ukrainian_lang hidden">Галерея робіт</span><span class="lang english_lang hidden">Gallery</span></a></li>
+								<li><a href="contacts.html"><span class="lang russian_lang">контакты</span><span class="lang ukrainian_lang hidden">контакти</span><span class="lang english_lang hidden">contacts</span></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -162,13 +192,13 @@
 		<div class="row" >
 			<div class="col-xs-12">
 				<h1>
-					Кто мы и что мы из себя представляем?
+					<span class="lang russian_lang">Кто мы и что мы из себя представляем?</span><span class="lang ukrainian_lang hidden">Хто ми і що пропонуємо</span><span class="lang english_lang hidden">Who we are and what we offer</span>
 				</h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur blanditiis deserunt dicta distinctio dolore dolorum earum eius enim et expedita facere ipsam iure libero maxime minus modi molestiae nam neque nobis officia perferendis praesentium quaerat quidem quod rem, repudiandae sapiente tempora tempore ullam vero voluptatem voluptates. Minus, voluptatum.
+				<p><span class="lang russian_lang">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur blanditiis deserunt dicta distinctio dolore dolorum earum eius enim et expedita facere ipsam iure libero maxime minus modi molestiae nam neque nobis officia perferendis praesentium quaerat quidem quod rem, repudiandae sapiente tempora tempore ullam vero voluptatem voluptates. Minus, voluptatum.</span><span class="lang ukrainian_lang hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur blanditiis deserunt dicta distinctio dolore dolorum earum eius enim et expedita facere ipsam iure libero maxime minus modi molestiae nam neque nobis officia perferendis praesentium quaerat quidem quod rem, repudiandae sapiente tempora tempore ullam vero voluptatem voluptates. Minus, voluptatum.</span><span class="lang english_lang hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur blanditiis deserunt dicta distinctio dolore doавввпв facere ipsam iure libero maxime minus modi molestiae nam neque nobis officia perferendis praesentium quaerat quidem quod rem, repudiandae sapiente tempora tempore ullam vero voluptatem voluptates. Minus, voluptatum.</span>
+
 				</p>
 			</div>
-			<div class="col-md-3 col-sm-6" data-aos="fade-up">
+			<div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-once="true">
 				<div class="col_wrapper  col_wrapper--first animated">
 					<img src="img/svg/industrial-robot.svg" alt="">
 					<h2>Преимущество</h2>
@@ -176,7 +206,7 @@
 					<a href="#">Read more</a>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+			<div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
 				<div class="col_wrapper  col_wrapper--second animated ">
 					<img src="img/svg/industrial-robot.svg" alt="" >
 					<h2>Преимущество</h2>
@@ -184,7 +214,7 @@
 					<a href="#">Read more</a>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6 " data-aos="fade-up"  data-aos-delay="200">
+			<div class="col-md-3 col-sm-6 " data-aos="fade-up"  data-aos-delay="200" data-aos-once="true">
 				<div class="col_wrapper  col_wrapper--third  animated ">
 					<img src="img/svg/industrial-robot.svg" alt="">
 					<h2>Преимущество</h2>
@@ -192,7 +222,7 @@
 					<a href="#">Read more</a>
 				</div>
 			</div>
-			<div class="col-md-3 col-sm-6" data-aos="fade-up"  data-aos-delay="300">
+			<div class="col-md-3 col-sm-6" data-aos="fade-up"  data-aos-delay="300" data-aos-once="true">
 				<div class="col_wrapper  col_wrapper--forth animated ">
 					<img src="img/svg/industrial-robot.svg" alt="">
 					<h2>Преимущество</h2>
@@ -210,7 +240,7 @@
 				<div class="col_wrapper col_wrapper--bordered">
 					<h1>Почему нас выбирают?</h1>
 					<ul class="left-column_list">
-						<li data-aos="fade-right"  data-aos-delay="300">
+						<li data-aos="fade-right"  data-aos-delay="300" data-aos-once="true">
 							<div class="col-descr_block">
 								<img src="img/svg/industrial-robot.svg" alt="">
 								<h2>Lorem ipsum dolor.</h2>
@@ -218,7 +248,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sed.</p>
 							<hr>
 						</li>
-						<li data-aos="fade-right"  data-aos-delay="400">
+						<li data-aos="fade-right"  data-aos-delay="400" data-aos-once="true">
 							<div class="col-descr_block">
 								<img src="img/svg/industrial-robot.svg" alt="">
 								<h2>Lorem ipsum.</h2>
@@ -226,7 +256,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sed.</p>
 							<hr>
 						</li>
-						<li data-aos="fade-right  data-aos-delay="500">
+						<li data-aos="fade-right" data-aos-once="true" data-aos-delay="400">
 							<div class="col-descr_block">
 								<img src="img/svg/industrial-robot.svg" alt="">
 								<h2>Header HeaderH</h2>
@@ -237,7 +267,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-6" data-aos="fade-up"  data-aos-delay="0">
+			<div class="col-md-6" data-aos="fade-up"  data-aos-delay="0" data-aos-once="true">
 				<div class="col_wrapper col_wrapper--bordered">
 					<h1>НАМ ДОВЕРЯЮТ!</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad assumenda commodi delectus doloribus eius, fugiat, obcaecati porro quisquam quo quos ratione repellendus tenetur ullam velit, vero voluptatem. Numquam, tenetur!</p>
@@ -273,7 +303,7 @@
 		</div>
 	</div>
 </section>
-<section class="anyquestions" data-aos="fade-down"  data-aos-delay="0">
+<section class="anyquestions" data-aos="fade-down" data-aos-once="true"  data-aos-delay="0">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2">
@@ -298,7 +328,7 @@
 <section class="contatcs_on_main">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6" data-aos="fade-down"  data-aos-delay="0">
+			<div class="col-md-6" data-aos="fade-down" data-aos-once="true" data-aos-delay="0">
 				<h1>
 					КАК НАС НАЙТИ?
 				</h1>
@@ -321,14 +351,14 @@
 				<h3>Мы можем сами связаться с Вами, будьте добры,<br> <a href="/contacts.html"  class="link-pointer"><span class="hidden animated"> > </span> оставьте свою заявку  </a></h3>
 
 			</div>
-			<div class="col-md-6" data-aos="fade-down"  data-aos-delay="200">
+			<div class="col-md-6" data-aos-once="true" data-aos="fade-down"  data-aos-delay="200">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4861.624272738435!2d31.999047436261456!3d46.853640921844054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cd5424f14b27%3A0xd047e06a6d894666!2z0LLRg9C70LjRhtGPINCQ0LnQstCw0LfQvtCy0YHRjNC60L7Qs9C-LCAxNSwg0JzQuNC60L7Qu9Cw0ZfQsiwg0JzQuNC60L7Qu9Cw0ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1479250461731" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 </section>
 
-<footer id="footer" data-aos="zoom-in-up">
+<footer id="footer" data-aos="zoom-in-up" data-aos-once="true">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -367,17 +397,17 @@
 </footer>
 
 	<!-- Optimized loading JS Start -->
-<script>
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		$('.preloader').addClass('hidden');
-	}
-</script>
+
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
 		{"src" : "js/common.js", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script>
-
+<script async>
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+		$('.preloader').addClass('hidden');
+	}
+</script>
 	<!-- Optimized loading JS End -->
 
 </body>
