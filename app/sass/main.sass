@@ -73,6 +73,19 @@ section
 section#contacts
   position: relative
 
+section.yourrequest
+  padding: 50px 0
+  color: $accent_font_color
+  h2
+    color: $accent_font_color
+  .bgi_container
+    background-image: url("../img/slider-bg-1.png")
+    filter: blur(5px)
+    -webkit-background-size: cover
+    background-size: cover
+    position: absolute
+    width: 100%
+    height: 300px
 
 .contacts-over-map_wrapper
     background-color: rgba(255,255,255, .8)
@@ -133,6 +146,11 @@ section.contatcs_on_main
      max-height: 20vh
 
 //aboutUs page uniques styles
+.aboutUs--onlocal
+  h2
+    text-align: center
+    font-weight: normal
+
 .lc-checks
   font-size: 1em
   list-style: none
@@ -271,3 +289,13 @@ section.production
       margin-left: 0
       text-decoration: none
       padding-left: 10%
+.trustUs
+  h2, h3
+    text-transform: uppercase
+  h3
+    margin: 0.3em
+
+  .yellow_bg
+    background-color: $accent
+    color: $accent_font_color
+    font-weight: normal

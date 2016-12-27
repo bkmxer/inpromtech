@@ -160,6 +160,7 @@ body
   min-width: 320px
   max-width: 100%
   margin: 0 auto
+  font-family: $default-font
 
 .lang_trigger
   z-index: 100
@@ -299,6 +300,10 @@ section
       animation-delay: 0.7s
     &--bordered
       text-align: center
+      h1
+        color: $accent
+        font-weight: normal
+        border-bottom: 0.1em solid $accent
       h1, h2
         text-align: center
       a.refer
@@ -341,6 +346,8 @@ section
       text-transform: uppercase
       text-decoration: underline
       font-weight: bold
+      font-size: 0.85em
+      text-align: center
       color: $default_font_color
 
 section.trustUs
@@ -380,13 +387,20 @@ section.trustUs
         margin: 0
         padding: 0
         li
+          transition: all 0.2s ease
           padding: 0.5em 0
+          &:hover
+            padding-left: 0.8em
+            color: $default_font_color
           a
            font-weight: lighter
+
+
       a
         color: $accent
         text-transform: uppercase
         text-decoration: none
+        font-weight: normal
         transition: color .3s ease
         &:hover,
         &focus,
@@ -408,6 +422,9 @@ section.trustUs
 section.anyquestions
   background-color: $accent
   padding: 20px 0
+  h2
+    margin: 0.4em
+    color: $accent_font_color
   img
     width: 80%
     display: block
@@ -418,7 +435,7 @@ section.anyquestions
     font-weight: bold
     text-transform: uppercase
     margin: 15% 20%
-    border: 5px solid $accent_font_color
+    border: 0.15em solid $accent_font_color
     -webkit-border-radius: 5px
     -moz-border-radius:  5px
     border-radius:  5px
@@ -432,7 +449,7 @@ section.anyquestions
     &:hover
       text-decoration: none
       background-color: lighten($accent, 10%)
-      border: 5px solid $default-font_color
+      border-color: $default-font_color
       color: $default_font_color
 .contatcs_on_main
   margin-top: 2em

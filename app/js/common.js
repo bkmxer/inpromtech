@@ -147,11 +147,11 @@ $('a[href*="#"]:not([href="#"])').click(function() {
 
 $(document).ready(function() {
         owl = $('.owl-carousel').owlCarousel({
+            items: 1,
             autoplay: true,
             autoplayTimeout: 5000,
-
-            margin:22,
-            autoWidth:true,
+            margin:0,
+            autoWidth: false,
             loop:true,
             center: true
         });
@@ -213,7 +213,7 @@ $(document).ready(function() {
 var lastScrollTop = 0;
 $(window).scroll(function(event){
     var st = $(this).scrollTop();
-    if (st > lastScrollTop || st< 800){
+    if (st > lastScrollTop || st< 200){
         $('#uplink').addClass("hidden");
 
     } else {
